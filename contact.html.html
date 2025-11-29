@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Me contacter — ABDALLAH Maoulida</title><link rel="stylesheet" href="style.css" /></head>
+<body>
+<div class="header">
+  <div class="brand">ABDALLAH Maoulida — Manager des Ressources Humaines</div>
+  <div class="nav">
+    <a href="index.html">A propos</a>
+    <a href="experiences.html">Mes expériences détaillées</a>
+    <a href="competences.html">Mes compétences détaillées</a>
+    <a href="projets.html">Gestion de projet</a>
+    <a href="crise.html">Gestion de crise</a>
+    <a href="contact.html">Me contacter</a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="card">
+    <h1>Me contacter</h1>
+    <div class="contact-row">
+      <div class="contact-card">
+        <h2>Coordonnées</h2>
+        <p><strong>Nom – Prénom :</strong> ABDALLAH Maoulida</p>
+        <p><strong>Adresse :</strong> 7 bis rue Yves Farges – 93290 – Tremblay-en-France</p>
+        <p><strong>Email :</strong> <a href="mailto:pro.maoulida@gmail.com">pro.maoulida@gmail.com</a></p>
+        <p><strong>Téléphone :</strong> <a href="tel:+337666851359">07 66 85 13 59</a></p>
+        <div class="buttons" style="margin-top:12px">
+          <a class="btn" href="mailto:pro.maoulida@gmail.com">Envoyer un mail</a>
+          <a class="btn btn-outline" href="tel:+337666851359">Appeler</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h2>Envoyer un message (ouvre votre client mail)</h2>
+        <label>Objet<input id="subject" class="contact-input" placeholder="Objet du message"></label>
+        <label>Message<textarea id="body" placeholder="Rédigez votre message ici"></textarea></label>
+        <div style="margin-top:10px">
+          <button class="btn" onclick="sendMail()">Ouvrir le client mail</button>
+          <button class="btn btn-outline" onclick="clearForm()">Effacer</button>
+        </div>
+        <p class="small" style="margin-top:10px">Le bouton ouvrira votre client mail avec l’adresse et le texte pré-rempli (fonctionne si vous avez un client mail configuré).</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function sendMail(){
+  var subj = encodeURIComponent(document.getElementById('subject').value || 'Contact via site');
+  var body = encodeURIComponent(document.getElementById('body').value || '');
+  var mailto = 'mailto:pro.maoulida@gmail.com?subject=' + subj + '&body=' + body;
+  window.location.href = mailto;
+}
+function clearForm(){
+  document.getElementById('subject').value='';
+  document.getElementById('body').value='';
+}
+</script>
+
+<div class="container">
+  <div class="footer card">
+    &copy; 2025 ABDALLAH Maoulida — Tous droits réservés.
+  </div>
+</div>
+</body></html>
