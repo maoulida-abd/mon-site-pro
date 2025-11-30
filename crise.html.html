@@ -1,7 +1,37 @@
 <!doctype html>
 <html lang="fr">
-<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Gestion de crise — ABDALLAH Maoulida</title><link rel="stylesheet" href="style.css" /></head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gestion de crise — ABDALLAH Maoulida</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .toggle-content {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.5s ease, opacity 0.4s ease;
+    }
+    .toggle-content.open {
+      opacity: 1;
+      max-height: 2000px;
+    }
+    .toggle-btn {
+      background-color: #c0392b;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-top: 8px;
+    }
+    .toggle-btn:hover { background-color: #922b21; }
+    hr { margin: 25px 0; }
+  </style>
+</head>
+
 <body>
+
 <div class="header">
   <div class="brand">ABDALLAH Maoulida — Manager des Ressources Humaines</div>
   <div class="nav">
@@ -17,42 +47,85 @@
 <div class="container">
   <div class="card">
     <h1>Gestion de crise</h1>
-    <h2>Cyclone Chido — 14 décembre 2024</h2>
-    <h3>1. Contexte</h3>
-    <p>Le 14 décembre 2024, le cyclone Chido a frappé Mayotte avec des vents très violents. Les locaux du service RH ont été largement sinistrés (80 % des locaux impactés). La priorité a été la continuité du service public, notamment la sécurisation du versement des paies.</p>
 
-    <h3>2. Actions menées avant l’évènement</h3>
-    <ul class="list">
-      <li>13 décembre – diffusion des consignes de sécurité et vérification du respect des mesures avant fermeture des locaux.</li>
-    </ul>
+    <h2>Cyclone Chido — Le 14 décembre 2025</h2>
+    <button class="toggle-btn" onclick="toggleContent('crise1')">Plus de détails</button>
+    <div id="crise1" class="toggle-content">
 
-    <h3>3. Pendant l’évènement</h3>
-    <ul class="list">
-      <li>14 décembre – confinement total suite à l’activation de l’alerte violette par le Préfet. Suspension des activités.</li>
-    </ul>
+      <h3>Contexte</h3>
+      <p>Le 14 décembre 2024, le cyclone Chido a frappé Mayotte avec une intensité sans précédent. Des vents supérieurs à 250 km/h, accompagnés de rafales atteignant 300 km/h, ont touché l’ensemble du territoire.</p>
+      <p>Les bâtiments de la préfecture ont subi d’importants dégâts, et 80 % des locaux, dont ceux du service des ressources humaines, ont été déclarés sinistrés.</p>
+      <p>Malgré ces conditions exceptionnelles, la continuité du service public devait être assurée, en particulier la sécurisation du versement de la paie des agents de l’État.</p>
 
-    <h3>4. Actions post-cyclone</h3>
-    <p><strong>J+2 – Lundi 16 décembre</strong></p>
-    <ul class="list">
-      <li>Diagnostic humain et matériel : premiers contacts avec les agents (3/32 joints), impossibilité d’utiliser les locaux.</li>
-    </ul>
-    <p><strong>J+3 & J+4 – 17–18 décembre</strong></p>
-    <ul class="list">
-      <li>17 agents sur 32 joints ; réflexion sur modalités de reprise ; réunions hebdomadaires avec la DRH nationale ; installation provisoire en bureaux partagés.</li>
-    </ul>
-    <p><strong>J+5 & J+6 – 19–20 décembre</strong></p>
-    <ul class="list">
-      <li>Reprise progressive de deux gestionnaires ; priorité : sécurisation des paies (décembre 2024, janvier et février 2025) ; télétravail renforcé et flex office.</li>
-    </ul>
+      <hr>
 
-    <h3>5. Reprise progressive de l’activité</h3>
-    <ul class="list">
-      <li>Semaine 23–27 décembre 2024 : 90 % des agents joints, reprise d’une dizaine de gestionnaires, communication quotidienne.</li>
-      <li>Semaine 30 déc 2024 – 3 janv 2025 : 100 % des agents joints, 70 % opérationnels, sécurisation complète des paies.</li>
-    </ul>
+      <h3>Actions menées avant l’évènement</h3>
+      <p><strong>Vendredi 13 décembre – Pré-cyclone</strong></p>
+      <ul>
+        <li>Diffusion à tous les agents des consignes de sécurité (mise en hauteur du matériel, débranchement électrique, fermeture des portes et fenêtres).</li>
+        <li>Vérification du respect des consignes avant fermeture des locaux.</li>
+      </ul>
 
-    <h3>6. Conclusion</h3>
-    <p>La mobilisation du service RH et la coordination avec la DRH nationale ont permis d’assurer la continuité du service public et la sécurisation des paies. Abnégation, dévouement et résilience ont guidé l’action durant cette période.</p>
+      <h3>Pendant l’évènement</h3>
+      <p><strong>Samedi 14 décembre</strong></p>
+      <ul>
+        <li>Mise en œuvre du confinement total, conformément à l’activation de l’alerte violette par le Préfet.</li>
+        <li>Suspension de toute activité administrative ou personnelle.</li>
+      </ul>
+
+      <h3>Actions post-cyclone</h3>
+      <p><strong>J+2 – Lundi 16 décembre</strong></p>
+      <ul>
+        <li>Diagnostic humain : premières prises de contact avec les agents du service RH (3 agents joints sur 32).</li>
+        <li>Diagnostic matériel : constat de l’impossibilité d’utiliser les locaux du service RH, entièrement sinistrés.</li>
+      </ul>
+
+      <p><strong>J+3 et J+4 – Mardi 17 et mercredi 18 décembre</strong></p>
+      <ul>
+        <li>17 agents sur 32 avaient pu être joints.</li>
+        <li>Première réflexion sur les modalités de reprise d’activité.</li>
+        <li>Premier échange de situation avec la DRH nationale (réunions hebdomadaires instaurées à partir de cette date).</li>
+        <li>Installation provisoire en bureaux partagés et définition des premières priorités.</li>
+      </ul>
+
+      <p><strong>J+5 et J+6 – Jeudi 19 et vendredi 20 décembre</strong></p>
+      <ul>
+        <li>Reprise progressive de deux gestionnaires RH.</li>
+        <li>Priorité : sécurisation des paies de décembre 2024, janvier 2025 et février 2025.</li>
+        <li>Installation temporaire des agents dans des locaux précaires.</li>
+        <li>Déploiement renforcé du télétravail et mise en place du flex office.</li>
+      </ul>
+
+      <hr>
+
+      <h3>Reprise progressive de l’activité</h3>
+      <p><strong>Semaine du 23 au 27 décembre 2024</strong></p>
+      <ul>
+        <li>90 % des agents joints et confirmés comme sains et saufs.</li>
+        <li>Reprise du travail d’une dizaine de gestionnaires.</li>
+        <li>Accompagnement au changement : communication régulière sur les nouvelles modalités de travail (télétravail renforcé jusqu’à 4 jours/semaine et mise en place du flex office).</li>
+        <li>Participation quotidienne aux CODIR de crise avec la direction du SGC.</li>
+      </ul>
+
+      <p><strong>Semaine du 30 décembre 2024 au 3 janvier 2025</strong></p>
+      <ul>
+        <li>100 % des agents joints.</li>
+        <li>70 % des effectifs opérationnels (30 % en reprise différée en raison de dommages personnels).</li>
+        <li>Sécurisation complète des paies, en coordination avec les différentes DRH ministérielles.</li>
+        <li>Reprise des réunions de service et des réunions de bureaux.</li>
+        <li>Maintien de l’organisation des concours interministériels malgré les conditions dégradées.</li>
+      </ul>
+
+      <hr>
+
+      <h3>Conclusion</h3>
+      <p>Grâce à la mobilisation rapide du service RH et à la collaboration étroite avec la DRH nationale et les services du SGC, la continuité du service public a pu être assurée dans un contexte exceptionnel.</p>
+      <p>La sécurisation de la paie pour l’ensemble des agents, priorité absolue, a été garantie sans interruption.</p>
+      <p>La reprise progressive de l’activité s’est déroulée dans des conditions difficiles mais maîtrisées, grâce à l’engagement de l’ensemble des agents.</p>
+      <p>Abnégation, dévouement et résilience ont constitué les maîtres mots qui m’ont guidé tout au long de cette période.</p>
+
+    </div>
+
   </div>
 </div>
 
@@ -61,4 +134,13 @@
     &copy; 2025 ABDALLAH Maoulida — Tous droits réservés.
   </div>
 </div>
-</body></html>
+
+<script>
+function toggleContent(id) {
+  const element = document.getElementById(id);
+  element.classList.toggle("open");
+}
+</script>
+
+</body>
+</html>
