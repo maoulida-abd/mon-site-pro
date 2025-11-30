@@ -1,7 +1,28 @@
 <!doctype html>
 <html lang="fr">
-<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Gestion de projet — ABDALLAH Maoulida</title><link rel="stylesheet" href="style.css" /></head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gestion de projet — ABDALLAH Maoulida</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .toggle-content { display: none; margin-top: 15px; }
+    .toggle-btn {
+      background-color: #005bbb;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-top: 8px;
+    }
+    .toggle-btn:hover { background-color: #004999; }
+    hr { margin: 25px 0; }
+  </style>
+</head>
+
 <body>
+
 <div class="header">
   <div class="brand">ABDALLAH Maoulida — Manager des Ressources Humaines</div>
   <div class="nav">
@@ -18,52 +39,135 @@
   <div class="card">
     <h1>Gestion de projet</h1>
 
+    <!-- PROJET 1 -->
     <h2>Projet I : Élections professionnelles 2022</h2>
-    <p class="small"><strong>Contexte</strong></p>
-    <p>Pilotage Les élections professionnelles dans la fonction publique représentent un moment démocratique majeur au sein des trois versants de la fonction publique. Tous les quatre ans, les agents sont appelés à élire leurs représentants syndicaux, qui siègeront dans les différentes instances prévues à cet effet :
-      
-         •	le comité social d’administration (CSA ministériel et CSA local),
-         •	la commission administrative paritaire (CAP),
-         •	et la commission consultative paritaire (CCP).
+    <button class="toggle-btn" onclick="toggleContent('p1')">Plus de détails</button>
+    <div id="p1" class="toggle-content">
 
-À Mayotte, l’ensemble des administrations était concerné. J’avais personnellement, avec l’appui de 7 gestionnaires, la responsabilité du pilotage des élections pour :
+      <h3>Contexte</h3>
+      <p>Les élections professionnelles dans la fonction publique représentent un moment démocratique majeur au sein des trois versants de la fonction publique. Tous les quatre ans, les agents élisent leurs représentants syndicaux siégeant dans :</p>
+      <ul>
+        <li>le comité social d’administration (CSA ministériel et CSA local),</li>
+        <li>la commission administrative paritaire (CAP),</li>
+        <li>la commission consultative paritaire (CCP).</li>
+      </ul>
 
-        •	la DREALM (450 agents),
-        •	la DREETS (80 agents)..</p>
-    
-    <h3>Gestion du projet et calendrier</h3>
-    <p><strong>Janvier — Mars 2022 : Communication & anticipation</strong></p>
-    <ul class="list">
-      <li>Campagne d’information (affiches, flyers, mailings), fiabilisation des listes via SIRH Renoirh, réunions avec directeurs et chefs de service.</li>
-    </ul>
-    <p><strong>Mars — Mai 2022 : Coordination avec les ministères</strong></p>
-    <ul class="list">
-      <li>Échanges avec les DRH ministérielles et préparation de l’élection test.</li>
-    </ul>
-    <p><strong>Juin 2022 : Élections test</strong></p>
-    <ul class="list">
-      <li>Organisation des élections test (6–12 juin). Taux de participation DREALM : 43 % (test).</li>
-    </ul>
-    <p><strong>Décembre 2022 : Déroulement des élections</strong></p>
-    <ul class="list">
-      <li>Élections du 1er au 8 décembre. Résultats : Taux de participation DREALM 71 %, DREETS 80 %.</li>
-    </ul>
-    <p><strong>Moyens mobilisés :</strong> 8 personnes, SIRH Renoirh, Pack Office, Néovote, 3 véhicules, 5 bureaux de vote électroniques.</p>
+      <p>À Mayotte, l’ensemble des administrations était concerné. Avec l’appui de 7 gestionnaires, j’avais la responsabilité du pilotage des élections pour :</p>
+      <ul>
+        <li>la DREALM (450 agents),</li>
+        <li>la DREETS (80 agents).</li>
+      </ul>
 
+      <hr>
+
+      <h3>Gestion du projet et calendrier</h3>
+
+      <h4>Janvier à mars 2022 : Communication & anticipation</h4>
+      <ul>
+        <li>Campagne d’information (affiches, flyers, mailings…).</li>
+        <li>Fiabilisation des listes électorales via le SIRH Renoirh.</li>
+        <li>Création et attribution d’adresses mail professionnelles.</li>
+        <li>Préparation et animation des premières réunions avec directeurs et chefs de service.</li>
+      </ul>
+
+      <h4>Mars à mai 2022 : Coordination avec les ministères</h4>
+      <ul>
+        <li>Échanges avec les DRH ministérielles.</li>
+        <li>Communication sur la mise en place de l’élection test de juin 2022.</li>
+      </ul>
+
+      <h4>Juin 2022 : Élections test</h4>
+      <ul>
+        <li>Organisation et tenue des élections test du 6 au 12 juin.</li>
+        <li>Taux de participation : 43 % pour la DREALM.</li>
+        <li>Mobilisation de trois gestionnaires RH + moi-même.</li>
+      </ul>
+
+      <h4>Juillet à septembre 2022 : Mobilités et ajustements</h4>
+      <ul>
+        <li>Intégration des nouveaux agents.</li>
+        <li>Retrait des agents sortants.</li>
+        <li>Consolidation des listes électorales.</li>
+        <li>Visite de 7 sites DREALM et 2 sites DREETS.</li>
+      </ul>
+
+      <h4>Octobre à novembre 2022 : Finalisation</h4>
+      <ul>
+        <li>Derniers échanges avec les DRH ministérielles.</li>
+        <li>Validation définitive des listes électorales.</li>
+        <li>23 novembre : réunion finale de présentation de l’application de vote électronique (Néovote).</li>
+        <li>Visite des sites et création des bureaux de vote électroniques.</li>
+      </ul>
+
+      <hr>
+
+      <h3>Décembre 2022 : Déroulement des élections</h3>
+      <ul>
+        <li>Du 1er au 8 décembre : tenue des élections et ouverture des bureaux de vote.</li>
+        <li>Mobilisation de 7 gestionnaires RH + moi-même.</li>
+        <li>Déplacements sur l’ensemble des sites.</li>
+      </ul>
+
+      <h3>Résultats</h3>
+      <ul>
+        <li>Taux de participation DREALM : 71 %</li>
+        <li>Taux de participation DREETS : 80 %</li>
+      </ul>
+
+      <h3>Moyens humains et matériels mobilisés</h3>
+      <ul>
+        <li>8 personnes mobilisées.</li>
+        <li>SIRH Renoirh.</li>
+        <li>Pack Microsoft Office.</li>
+        <li>Solution de vote électronique : Néovote.</li>
+        <li>3 véhicules de service.</li>
+        <li>5 bureaux de vote électroniques.</li>
+      </ul>
+
+    </div>
+
+
+    <!-- PROJET 2 -->
     <h2>Projet II : Pilotage de la bascule en PSOP – Mayotte (2022–2023)</h2>
-    <p>Responsable du pilotage et de la coordination de la bascule en PSOP pour la DREALM et la DREETS. Actions : planification, assainissement des données RH, numérisation, sécurisation de la paye, suivi post-bascule.</p>
-    <p><strong>Résultats :</strong> DREALM : 437 agents payés normalement en janvier 2023 (7 réclamations mineures). DREETS : 100 % des agents payés. Bascule réalisée dans les délais.</p>
+    <button class="toggle-btn" onclick="toggleContent('p2')">Plus de détails</button>
+    <div id="p2" class="toggle-content">
 
-    <h2>Projet III : Déploiement de l’outil ESTEVE au sein du périmètre ATE</h2>
-    <p>Pilotage du déploiement pour l’Intérieur, l’Écologie et les Affaires sociales (plus de 900 agents). Phases : communication, paramétrage, accompagnement des utilisateurs, suivi des recours.</p>
-    <p><strong>Résultats :</strong> &gt;80 % des entretiens réalisés via l’outil, 11 gestionnaires mobilisés.</p>
-  </div>
-</div>
+      <h3>Contexte</h3>
+      <p>Avec l’appui de 5 gestionnaires, j’étais responsable du pilotage et de la coordination de la bascule en PSOP pour :</p>
+      <ul>
+        <li>DREALM : ~450 agents, plus de 20 corps, ~30 contractuels,</li>
+        <li>DREETS : ~80 agents, ~10 corps, ~15 contractuels.</li>
+      </ul>
+      <p>Il s’agit d’un projet national visant à transférer la gestion et la préliquidation de la paye vers les DRH ministérielles avant le 1ᵉʳ janvier 2023.</p>
 
-<div class="container">
-  <div class="footer card">
-    &copy; 2025 ABDALLAH Maoulida — Tous droits réservés.
-  </div>
-</div>
-</body></html>
+      <hr>
 
+      <h3>Principales actions</h3>
+
+      <h4>Janvier à février 2022 : Conduite de projet</h4>
+      <p>Planification, coordination avec les DRH ministérielles et suivi du calendrier.</p>
+
+      <h4>Mars à juillet 2022 : Assainissement des données RH</h4>
+      <ul>
+        <li>Vérification complète des dossiers administratifs.</li>
+        <li>Correction des anomalies de carrière.</li>
+        <li>Mise à jour et production en masse d’actes RH.</li>
+      </ul>
+
+      <h4>Août à septembre 2022 : Numérisation et transfert</h4>
+      <ul>
+        <li>Digitalisation quotidienne des pièces administratives.</li>
+        <li>Mise en place de modalités d’échanges sécurisés (mail, SharePoint).</li>
+      </ul>
+
+      <h4>Octobre à décembre 2022 : Sécurisation des éléments de paye</h4>
+      <ul>
+        <li>Finalisation et vérification des données.</li>
+        <li>Échanges avec les services liquidateurs (SLR).</li>
+        <li>Priorisation de la paye principale en cas de difficulté.</li>
+      </ul>
+
+      <h4>Janvier à mars 2023 : Suivi post-bascule</h4>
+      <ul>
+        <li>Analyse des premiers versements.</li>
+        <li>Traitement des réclamations.</li>
