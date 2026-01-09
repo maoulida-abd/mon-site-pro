@@ -97,3 +97,30 @@ textarea{ min-height:120px; resize:vertical }
   .container{ margin:18px auto }
 }
 
+.about {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.photo-pro {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.about-text h1 {
+  margin-top: 0;
+}
+
+/* Responsive mobile */
+@media (max-width: 700px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+}
